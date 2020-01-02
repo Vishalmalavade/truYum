@@ -14,6 +14,12 @@ public class Cart {
         this.menuItemList = menuItemList;
         this.total = total;
     }
+    @Override
+    public String toString() {
+        return "Cart [menuItemList=" + menuItemList + ", total=" + total + ", getMenuItemList()="
+                + getMenuItemList() + ", getTotal()=" + getTotal() + ", getClass()=" + getClass()
+                + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+    }
     public List<MenuItem> getMenuItemList() {
         return menuItemList;
     }
