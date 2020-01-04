@@ -33,7 +33,7 @@ public class CartDaoCollectionImplTest {
             }
             System.out.println("Total Price" + cartDao.getAllCartItems(1).getTotal());
         } catch (CartEmptyException e) {
-            System.out.println(e.getLocalizedMessage());
+            System.out.println(e);
 
         }
 
