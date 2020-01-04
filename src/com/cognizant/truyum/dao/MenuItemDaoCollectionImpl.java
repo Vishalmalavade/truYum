@@ -12,7 +12,7 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
 
     public MenuItemDaoCollectionImpl() {
         if (menuItemList == null || menuItemList.isEmpty()) {
-            MenuItem item1 = new MenuItem(1, "Sandwitch", 99.00f, true,
+            MenuItem item1 = new MenuItem(1, "Sandwich", 99.00f, true,
                     DateUtil.convertToDate("15/03/2017"), "Main Course", true);
             MenuItem item2 = new MenuItem(2, "Burger", 129.00f, true,
                     DateUtil.convertToDate("23/12/2017"), "Main Course", false);
