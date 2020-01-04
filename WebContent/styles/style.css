@@ -1,0 +1,182 @@
+header {
+    top: 0%;
+    background-color: #004496;
+    min-width: 100%;
+    position: fixed;
+    left: 0%;
+	font-size: 18px;
+	height: 6%;
+}
+
+img {
+    top: 0%;
+    min-width: 3%;
+    position: fixed;
+    left: 12%;
+    height: 5%;
+}
+
+/*Logo for truYum*/
+.truyum {
+    top: -2.4%;
+    position: fixed;
+    font-size: 35px;
+    font-family: arial;
+    font-style: calibri;
+    left: 3%;
+    color: #ffffff;
+}
+
+/*heading menu items*/
+.items {
+    top: 12%;
+    position: fixed;
+    font-size: 40px;
+    font-family: calibri;
+    font-style: normal;
+    left: 5.4%;
+}
+
+/*heading as MENU Link*/
+.menu {
+    top: 1.4%;
+    left: 80%;
+    position: fixed;
+    font-size: 25px;
+    font-family: calibri;
+    font-style: normal;
+    color: #ffffff;
+}
+
+body {
+    top: 16.5%;
+    background-color: #ffffff;
+    min-width: 100%;
+    position: fixed;
+    left: 0%;
+    font-size: 30px;
+}
+
+footer {
+    bottom: 0%;
+    background-color: #c4c4c4;
+    min-width: 100%;
+    position: fixed;
+    left: 0%;
+    font-size: 14px;
+    font-family: calibri;
+    font-style: normal;
+}
+
+table {
+    top: 26%;
+    background-color: #ffffff;
+    min-width: 65%;
+    position: fixed;
+    font-size: 20px;
+    left: 5%;
+}
+
+/*table for cart.html */
+.menu-item {
+    top: 26%;
+    background-color: #ffffff;
+    min-width: 50%;
+    position: fixed;
+    left: 5%;
+    font-size: 20px;
+}
+
+/*For copy rights*/
+.copy {
+    color: #616060;
+}
+
+/* Cart link*/
+.cart {
+    top: 1.4%;
+    left: 90%;
+    position: fixed;
+    font-size: 25px;
+    font-family: calibri;
+    font-style: normal;
+    color: #ffffff
+}
+
+/* To display menu item details saved successfully*/
+.menu-status {
+    top: 28%;
+    color: #06bd4b;
+    min-width: 50%;
+    position: fixed;
+    left: 5.4%;
+    font-size: 25px;
+}
+
+/*Table for cutsomer cart notification*/
+.added-to-cart {
+    top: 31%;
+    background-color: #ffffff;
+    min-width: 50%;
+    position: fixed;
+    left: 5%;
+    font-size: 20px;
+}
+
+/*Item added to cart successfully heading*/
+.added {
+    position: fixed;
+    top: 20%;
+    color: #24bd4f;
+    left: 20%;
+    font-family: calibri;
+    font-style: normal;
+}
+
+/* To display cart is empty*/
+.empty {
+    top: 26%;
+    color: #adadad;
+    position: fixed;
+    font-size: 25px;
+    left: 5%;
+    font-family: calibri;
+    font-style: normal;
+}
+
+/* To display item deleted from cart*/
+.removed {
+    top: 19%;
+    color: #24bd4f;
+    position: fixed;
+    left: 22%;
+    font-size: 26px;
+    font-family: calibri;
+    font-style: bold;
+}
+
+/* submit button*/
+.submit {
+    bottom: 52%;
+    background-color: #2b20a8;
+	border:no-repeat;
+    font-size: 26px;
+    position: fixed;
+    left: 5%;
+    font-family: calibri;
+    font-style: normal;
+    color: #ffffff;
+}
+/* Table of cart item removed successfully*/
+.cart1 {
+    top: 28%;
+    background-color: #ffffff;
+    min-width: 50%;
+    position: fixed;
+    left: 5%;
+    font-size: 20px;
+}
+a{
+	color:black;
+}
+

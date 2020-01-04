@@ -5,17 +5,15 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateUtil {
-    public Date convertToDate(String Date)
-    {
-    try{
-        SimpleDateFormat format=new SimpleDateFormat("dd/MJM/yyyy");
-        format.setLenient(false);
-        return format.parse(Date);
-        
-    }catch(ParseException e) {
-        System.out.println("Date format went wrong");
-    }
+    public static Date convertToDate(String date) {
+        try {
+            SimpleDateFormat format = new SimpleDateFormat("dd/mm/yyyy");
+            format.setLenient(false);
+            return format.parse(date);// String to Date
+
+        } catch (ParseException e) {
+            System.out.println("Date/format went wrong");
+        }
         return null;
     }
-
 }

@@ -1,6 +1,8 @@
+
 package com.cognizant.truyum.model;
 
-import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MenuItem {
     private long id;
@@ -9,14 +11,22 @@ public class MenuItem {
     private boolean active;
     private Date dateOfLaunch;
     private String category;
-    private boolean freeDelivery;
+    private boolean freedelivery;
 
     public MenuItem() {
-        // TODO Auto-generated constructor stub
+
     }
 
     public MenuItem(long id, String name, float price, boolean active, Date dateOfLaunch,
-            String category, boolean freeDelivery) {
+            String category, boolean freedelivery) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.active = active;
+        this.dateOfLaunch = dateOfLaunch;
+        this.category = category;
+        this.freedelivery = freedelivery;
     }
 
     public long getId() {
@@ -67,18 +77,70 @@ public class MenuItem {
         this.category = category;
     }
 
-    public boolean isFreeDelivery() {
-        return freeDelivery;
+    public boolean isFreedelivery() {
+        return freedelivery;
     }
 
-    public void setFreeDelivery(boolean freeDelivery) {
-        this.freeDelivery = freeDelivery;
+    public void setFreedelivery(boolean freedelivery) {
+        this.freedelivery = freedelivery;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + (active ? 1231 : 1237);
+        result = prime * result + ((category == null) ? 0 : category.hashCode());
+        result = prime * result + ((dateOfLaunch == null) ? 0 : dateOfLaunch.hashCode());
+        result = prime * result + (freedelivery ? 1231 : 1237);
+        result = prime * result + (int) (id ^ (id >>> 32));
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + Float.floatToIntBits(price);
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        MenuItem other = (MenuItem) obj;
+        if (active != other.active)
+            return false;
+        if (category == null) {
+            if (other.category != null)
+                return false;
+        } else if (!category.equals(other.category))
+            return false;
+        if (dateOfLaunch == null) {
+            if (other.dateOfLaunch != null)
+                return false;
+        } else if (!dateOfLaunch.equals(other.dateOfLaunch))
+            return false;
+        if (freedelivery != other.freedelivery)
+            return false;
+        if (id != other.id)
+            return false;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        if (Float.floatToIntBits(price) != Float.floatToIntBits(other.price))
+            return false;
+        return true;
     }
 
     @Override
     public String toString() {
-        return "MenuItem [id=" + id + ", name=" + name + ", price=" + price + ", active=" + active
-                + ", dateOfLaunch=" + dateOfLaunch + ", category=" + category + ", freeDelivery="
-                + freeDelivery + "]";
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+        return String.format("%-10s%-20s%-10s%-15s%-15s%-15s%s\n", id, name, price,
+                active == true ? "Yes" : "No", sdf.format(dateOfLaunch), category,
+                freedelivery == true ? "Yes" : "No");
+
     }
 }
