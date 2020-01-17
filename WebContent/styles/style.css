@@ -20,7 +20,7 @@ img {
 .truyum {
     top: -2.4%;
     position: fixed;
-    font-size: 35px;
+    font-size: 32px;
     font-family: arial;
     font-style: calibri;
     left: 3%;
@@ -126,9 +126,9 @@ table {
 /*Item added to cart successfully heading*/
 .added {
     position: fixed;
-    top: 20%;
-    color: #24bd4f;
-    left: 20%;
+    left:5%;
+    top:8%;
+    color:#4ecf57;
     font-family: calibri;
     font-style: normal;
 }
@@ -146,7 +146,7 @@ table {
 
 /* To display item deleted from cart*/
 .removed {
-    top: 19%;
+    top: 8%;
     color: #24bd4f;
     position: fixed;
     left: 22%;
@@ -157,7 +157,6 @@ table {
 
 /* submit button*/
 .submit {
-    bottom: 52%;
     background-color: #2b20a8;
 	border:no-repeat;
     font-size: 26px;
