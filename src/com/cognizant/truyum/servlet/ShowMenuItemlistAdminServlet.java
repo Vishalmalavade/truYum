@@ -13,7 +13,7 @@ import com.cognizant.truyum.dao.MenuItemDao;
 import com.cognizant.truyum.dao.MenuItemDaoCollectionImpl;
 import com.cognizant.truyum.model.MenuItem;
 
-@WebServlet("/ShowMenuItemlistAdmin")
+@WebServlet("/ShowMovielistAdmin")
 public class ShowMenuItemlistAdminServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
